@@ -1,0 +1,49 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Motorcycle Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../TriviaGame/assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="bg">
+        <header>Motorcycle Trivia!</header>
+        <div id="mainContainer">
+            <button id="buttonStart">Ignition! <br> (Start)</button>
+        </div>
+        <div id="triviaContainer">
+            <p>Time: <span id="timer"></span></p>
+            <div id = "triviaForm">
+                <p id = "question1"> Which rider has the most championship titles in MotoGP? </p>
+                <input type = "radio" name = "q1" id = "1a">Valentino Rossi</input>
+                <input type = "radio" name = "q1" id = "2a">Marc Marquez</input>
+                <input type = "radio" name = "q1" id = "3a">Giacomo Agostini</input>
+
+                <p id = "question2"> Which manufacturer has the most race wins in MotoGP? </p>
+                <input type = "radio" name = "q2" id = "1b" >Honda</input>
+                <input type = "radio" name = "q2" id = "2b" >Yamaha</input>
+                <input type = "radio" name = "q2" id = "3b" >Ducati</input>
+
+                <p id = "question3"> How many MotoGP races are held in North America every season?</p>
+                <input type = "radio" name = "q3" id = "1c" >1</input>
+                <input type = "radio" name = "q3" id = "2c" >3</input>
+                <input type = "radio" name = "q3" id = "3c" >5</input>
+            </div>
+            <button id = "resultsButton">Submit!</button>
+        </div>
+        <div id = "resultsContainer">
+            <h3>Results</h3>
+            <p>Correct: <span id="correct-text"></span></p>
+            <p>Incorrect: <span id="incorrect-text"></span></p>
+            <p>Unanswered: <span id="unanswered-text"></span></p>
+        </div>
+    </div>
+    <script src="../TriviaGame/assets/javascript/app.js"></script>
+</body>
+
+</html>
